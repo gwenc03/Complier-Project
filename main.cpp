@@ -6,6 +6,7 @@ using namespace std;
 #include "LexAnalyzer.h"
 
 int main() {
+    //main for lexemeAnalyzer
     ifstream lexemeFile("lexemes.txt");
     if (!lexemeFile){
         cout << "can't find lexeme file" << endl;
@@ -24,5 +25,15 @@ int main() {
         cout << "error in source file" << endl;
     }
     lexAn.printVectors(outFile);
+
+    //main for syntaxAnalyzer
+    ifstream infile("codelexemes.txt");
+    if (!infile){
+        cout << "error opening lexemes.txt file" << endl;
+        exit(-1);
+    }
+    SyntaxAnalyzer sa(infile);
+    sa.parse();
+    
     return 0;
 }
