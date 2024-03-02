@@ -1,0 +1,6 @@
+t_main main
+t_id S
+t_id aABb
+t_id aaaBb
+t_id aaabbb
+t_end end
