@@ -173,9 +173,9 @@ map<string, string>::iterator LexAnalyzer::inMap(char x){
     return tokenmap.find(t);
 }
 bool LexAnalyzer::isKeyword(string s){
-    if (s=="and" || s == "false" || s == "input" || s == "output" ||
-        s=="true" || s == "begin" || s == "end" || s == "integer" ||
-        s=="string" || s == "var" || s == "else" || s == "not" ||
+    if (s=="and" || s == "input" || s == "output" ||
+        s == "end" || s == "integer" ||
+        s=="string" || s == "var" || s == "else" ||
         s=="while" || s == "if" || s == "loop" || s == "or" ||
         s=="then" || s == "main")
         return true;
