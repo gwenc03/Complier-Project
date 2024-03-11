@@ -14,7 +14,6 @@ t_then then
 t_main main
 s_assign =
 s_comma ,
-s_colon :
 s_lparen (
 s_rparen )
 s_semi ;
